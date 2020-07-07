@@ -15,7 +15,7 @@ function fetchAnimals(e) {
   const location = document.querySelector('#zip').value;
   const age = document.querySelector('#age').value;
   const sex = document.querySelector('#sex').value;
-  const size = document.querySelector('#siz').value;
+  const size = document.querySelector('#size').value;
   const kidf = document.querySelector('#kid-friendly').value;
   // Location, Age, Sex, Size, Kid-Friendly, 
 
@@ -28,7 +28,7 @@ function fetchAnimals(e) {
 
   // Fetch Pets
   fetchJsonp(
-    `http://api.petfinder.com/pet.find?format=json&key=y2RKgHOMwBIq7gFIoodsstjVZNfObL9AianD6fw1XVr2Ed1Fzg&animal=${animal}&location=${zip}&callback=callback`,
+    `http://api.petfinder.com/pet.find?format=json&key=YOURKEYHERE&animal=${animal}&location=${zip}&callback=callback`,
     {
       jsonpCallbackFunction: 'callback'
     }
